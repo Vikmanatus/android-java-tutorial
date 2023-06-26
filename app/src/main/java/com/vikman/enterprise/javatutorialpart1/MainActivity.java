@@ -15,5 +15,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button helloButton = findViewById(R.id.helloButton);
+        TextView welcomeText = findViewById(R.id.txtWelcome);
+        helloButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                welcomeText.setText("Hello again");
+            }
+        });
     }
 }
