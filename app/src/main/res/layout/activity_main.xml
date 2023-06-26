@@ -7,82 +7,13 @@
     tools:context=".MainActivity">
 
 
-    <EditText
-        android:id="@+id/editTextFirstname"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:ems="10"
-        android:hint="First name"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
+        android:text="@string/hello_world"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextLastname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Last name"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextFirstname"
-        app:layout_constraintStart_toStartOf="@+id/editTextFirstname"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFirstname" />
-
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextLastname"
-        app:layout_constraintStart_toStartOf="@+id/editTextLastname"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLastname" />
-
-    <Button
-        android:id="@+id/registerButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Register"
-        app:layout_constraintEnd_toEndOf="@+id/editTextEmail"
-        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
-
-    <TextView
-        android:id="@+id/firstNameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:text="First Name"
-        app:layout_constraintEnd_toEndOf="@+id/registerButton"
-        app:layout_constraintStart_toStartOf="@+id/registerButton"
-        app:layout_constraintTop_toBottomOf="@+id/registerButton" />
-
-    <TextView
-        android:id="@+id/lastNameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Last Name"
-        app:layout_constraintEnd_toEndOf="@+id/firstNameTextView"
-        app:layout_constraintStart_toStartOf="@+id/firstNameTextView"
-        app:layout_constraintTop_toBottomOf="@+id/firstNameTextView" />
-
-    <TextView
-        android:id="@+id/emailTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Email"
-        app:layout_constraintEnd_toEndOf="@+id/lastNameTextView"
-        app:layout_constraintStart_toStartOf="@+id/lastNameTextView"
-        app:layout_constraintTop_toBottomOf="@+id/lastNameTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
